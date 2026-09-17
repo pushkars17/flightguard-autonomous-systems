@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightGuard Autonomous Systems</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        p.subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+        }
+        .section-title {
+            font-size: 1.6rem;
+            margin: 40px 0 15px 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            color: var(--accent);
+        }
+        p, li {
+            color: var(--text-muted);
+        }
+        strong {
+            color: var(--text-main);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: var(--text-main);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 15px;
+            border: 1px solid var(--border);
+        }
+        pre {
+            background-color: #090d16;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            color: #38bdf8;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn {
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✈️ FlightGuard Autonomous Systems</h1>
+            <p class="subtitle">Enterprise-Grade Aerospace Telemetry Monitoring, Predictive Maintenance & XAI Audit Platform</p>
+            <div class="btn-container">
+                <a href="https://github.com/pushkars17/flightguard-autonomous-systems" target="_blank" class="btn">View Source on GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">📋 Executive Summary & System Objective</h2>
+            <p><strong>FlightGuard Autonomous Systems</strong> is a safety-critical aerospace telemetry and predictive maintenance platform designed to prevent catastrophic equipment failures. By integrating a robust Tabular Stacking Ensemble Classifier, an advanced Remaining Useful Life (RUL) Regression Engine, Explainable AI (XAI) feature attribution modules, and a Multi-Agent Swarm Workflow, the platform delivers automated, transparent, and legally defensible maintenance audits with precise failure timeline estimations.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">⚙️ Core Predictive Maintenance & RUL Specifications</h2>
+            <ul>
+                <li><strong>Remaining Useful Life (RUL) Engine:</strong> Combines airframe operating hours, live turbine vibration, exhaust gas temperature, and stacking ensemble risk probabilities to estimate exact operational lifespan remaining before overhaul.</li>
+                <li><strong>Maintenance Window Directives:</strong> Automatically categorizes components into actionable, high-priority timelines:
+                    <br>🔴 <strong>Immediate Action:</strong> &lt;48 Hours
+                    <br>🟡 <strong>Schedule Within 2 Weeks</strong>
+                    <br>🔵 <strong>Routine Next Check</strong>
+                    <br>🟢 <strong>Nominal / Healthy</strong>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">💡 Tech Stack & Architecture Framework</h2>
+            <ul>
+                <li>🐍 <strong>Core Programming Language:</strong> Python (v3.10+)</li>
+                <li>🧠 <strong>Machine Learning & Ensembles:</strong> Scikit-learn, NumPy, Pandas, Stacking Ensembles, and Regression Estimators</li>
+                <li>🔍 <strong>Explainable AI (XAI) & Auditing:</strong> Custom local feature attribution, SHAP-style scoring engines, and automated risk quantification</li>
+                <li>🤖 <strong>Multi-Agent Orchestration:</strong> Custom Python Agent Swarm Architecture (Telemetry Monitoring Agent, XAI Audit Agent, Master Orchestrator)</li>
+                <li>📊 <strong>Reporting & Visualization:</strong> ReportLab (Multi-page PDF compilation engine), Matplotlib, and Seaborn (Enterprise diagnostic dashboard generation)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">📊 Visual Analytics & Telemetry Dashboards</h2>
+            <p>Comprehensive diagnostic charts and feature attribution graphs generated dynamically by the system under <code>output/graphs/</code>:</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Cumulative Fleet Risk Exposure Magnitude Trend</h3>
+                    <p>Tracks the aggregated risk exposure accumulation sequence across audited operational units.</p>
+                    <img src="output/graphs/cumulative_risk_curve.png" alt="Cumulative Risk Curve">
+                </div>
+
+                <div class="card">
+                    <h3>2. Airframe Operating Hours vs Remaining Useful Life (RUL)</h3>
+                    <p>Scatter correlation plot highlighting degradation curves and remaining operational hours relative to active flight hours.</p>
+                    <img src="output/graphs/rul_vs_operating_hours.png" alt="RUL vs Operating Hours">
+                </div>
+
+                <div class="card">
+                    <h3>3. Ambient Temperature vs Turbine Exhaust Gas Thermal Stress</h3>
+                    <p>Evaluates thermal stress thresholds under varied ambient conditions across turbine subsystems.</p>
+                    <img src="output/graphs/thermal_stress_correlation.jpg" alt="Thermal Stress Correlation">
+                </div>
+
+                <div class="card">
+                    <h3>4. Explainable AI (XAI) Feature Attribution Impact Ranking</h3>
+                    <p>Mean SHAP attribution scores showcasing feature importance weights influencing final model predictions.</p>
+                    <img src="output/graphs/xai_feature_attribution.png" alt="XAI Feature Attribution">
+                </div>
+
+                <div class="card">
+                    <h3>5. Hydraulic Actuation Fluid Level Variance Across Fleet</h3>
+                    <p>Statistical box plot analyzing fluid level percentages and dispersion bounds across active airframe inventories.</p>
+                    <img src="output/graphs/hydraulic_fluid_variance.png" alt="Hydraulic Fluid Variance">
+                </div>
+
+                <div class="card">
+                    <h3>6. Swarm Telemetry Processing Latency vs Batch Scale</h3>
+                    <p>Performance benchmark tracking execution latency scaling across increasing batch sizes in the multi-agent swarm pipeline.</p>
+                    <img src="output/graphs/swarm_latency_benchmark.png" alt="Swarm Latency Benchmark">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 FlightGuard Autonomous Systems | Distributed under the MIT License.</p>
+        </footer>
+    </div>
+</body>
+</html>
