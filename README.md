@@ -1,18 +1,8 @@
 # ✈️ FlightGuard Autonomous Systems
 
-> \*\*Enterprise-Grade Aerospace Telemetry Monitoring, Predictive Maintenance, and Multi-Agent Compliance Audit Platform\*\*
-
-[!\[Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-\[!\[Status: Production Ready](https://img.shields.io/badge/status-active-success.svg)]()
-
-\---
-
 ## 📋 Executive Summary \& System Objective
 
 **FlightGuard Autonomous Systems** is a safety-critical aerospace telemetry and predictive maintenance platform designed to prevent catastrophic equipment failures. By integrating a robust **Tabular Stacking Ensemble Classifier**, an advanced **Remaining Useful Life (RUL) Regression Engine**, **Explainable AI (XAI)** feature attribution modules, and a **Multi-Agent Swarm Workflow**, the platform delivers automated, transparent, and legally defensible maintenance audits with precise failure timeline estimations.
-
-\---
 
 ## 🏗️ Modular Project Architecture
 
@@ -39,8 +29,6 @@ flightguard\_autonomous\_systems/
 └── requirements.txt                       # Project dependencies
 ```
 
-\---
-
 ## ⚙️ Core Predictive Maintenance \& RUL Specifications
 
 * **Remaining Useful Life (RUL) Engine:** Combines airframe operating hours, live turbine vibration ($	ext{Hz}$), exhaust gas temperature ($	ext{°C}$), and stacking ensemble risk probabilities to estimate exact operational lifespan remaining before overhaul.
@@ -50,8 +38,6 @@ flightguard\_autonomous\_systems/
   * 🟡 **Schedule Within 2 Weeks**
   * 🔵 **Routine Next Check**
   * 🟢 **Nominal / Healthy**
-
-\---
 
 ## 🚀 End-to-End Execution Workflow
 
@@ -88,14 +74,10 @@ Follow these steps to run the complete pipeline locally:
    python generate\_all\_graphs.py
    ```
 
-\---
-
 ## 📊 Outputs \& Deliverables
 
 * **PDF Compliance Audit Report:** Automatically compiled via ReportLab at `output/flightguard\_audit\_report.pdf`.
 * **Telemetry Visualizations:** High-resolution diagnostic charts and feature attribution graphs located under `output/graphs/`.
-
-\---
 
 ## 💡 Tech Stack \& Libraries
 
@@ -104,8 +86,6 @@ Follow these steps to run the complete pipeline locally:
 * **Explainable AI (XAI):** Custom attribution modules \& feature scoring engines
 * **Multi-Agent Orchestration:** Custom Python Agent Swarm Architecture
 * **Reporting \& Visualization:** ReportLab, Matplotlib, Seaborn
-
-\---
 
 ## 🛡️ License
 
