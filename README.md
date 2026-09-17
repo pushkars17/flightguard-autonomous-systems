@@ -7,31 +7,31 @@
 ## 🏗️ Modular Project Architecture
 
 ```text
-flightguard\_autonomous\_systems/
+flightguard_autonomous_systems/
 ├── data/
-│   └── aircraft\_telemetry\_dataset.csv     # Sanitized aerospace telemetry dataset (17,107 rows, 8 cols)
-├── ml\_models/
-│   ├── \_\_init\_\_.py
-│   ├── stacking\_ensemble\_engine.py        # Stacking Classifier for failure risk classification
-│   ├── rul\_estimator.py                   # Remaining Useful Life (RUL) regression timeline engine
-│   └── xai\_explainer.py                   # Local feature attribution and risk score computation engine
+│   └── aircraft_telemetry_dataset.csv     # Sanitized aerospace telemetry dataset (17,107 rows, 8 cols)
+├── ml_models/
+│   ├── __init__.py
+│   ├── stacking_ensemble_engine.py        # Stacking Classifier for failure risk classification
+│   ├── rul_estimator.py                   # Remaining Useful Life (RUL) regression timeline engine
+│   └── xai_explainer.py                   # Local feature attribution and risk score computation engine
 ├── agents/
-│   ├── \_\_init\_\_.py
-│   ├── telemetry\_agent.py                 # Real-time IoT sensor anomaly \& failure risk monitoring agent
-│   ├── xai\_audit\_agent.py                 # Translates SHAP-style attribution scores into human-readable logs
+│   ├── __init__.py
+│   ├── telemetry_agent.py                 # Real-time IoT sensor anomaly \& failure risk monitoring agent
+│   ├── xai_audit_agent.py                 # Translates SHAP-style attribution scores into human-readable logs
 │   └── orchestrator.py                    # Master multi-agent coordination swarm pipeline
 ├── output/
-│   ├── flightguard\_audit\_report.pdf       # Professional multi-page ReportLab compliance audit report
+│   ├── flightguard_audit_report.pdf       # Automatically generated multi-page ReportLab compliance audit report
 │   └── graphs/                            # Enterprise customized visual analytics charts (8 plots)
 ├── main.py                                # Master execution script integrating ML, XAI, RUL, and Swarm
-├── generate\_all\_graphs.py                 # Advanced visual analytics dashboard generator script
+├── generate_all_graphs.py               # Advanced visual analytics dashboard generator script
 ├── tests.py                               # Unit and integration test suite
 └── requirements.txt                       # Project dependencies
 ```
 
 ## ⚙️ Core Predictive Maintenance \& RUL Specifications
 
-* **Remaining Useful Life (RUL) Engine:** Combines airframe operating hours, live turbine vibration ($	ext{Hz}$), exhaust gas temperature ($	ext{°C}$), and stacking ensemble risk probabilities to estimate exact operational lifespan remaining before overhaul.
+* **Remaining Useful Life (RUL) Engine:** Combines airframe operating hours, live turbine vibration, exhaust gas temperature, and stacking ensemble risk probabilities to estimate exact operational lifespan remaining before overhaul.
 * **Maintenance Window Directives:** Automatically categorizes components into actionable, high-priority timelines:
 
   * 🔴 **Immediate Action:** $< 48$ Hours
@@ -71,7 +71,7 @@ Follow these steps to run the complete pipeline locally:
 5. **Generate Enterprise Visual Dashboards \& Audit Reports:**
 
 ```bash
-   python generate\_all\_graphs.py
+   python generate_all_graphs.py
    ```
 
 ## 📊 Outputs \& Deliverables
@@ -79,13 +79,33 @@ Follow these steps to run the complete pipeline locally:
 * **PDF Compliance Audit Report:** Automatically compiled via ReportLab at `output/flightguard\_audit\_report.pdf`.
 * **Telemetry Visualizations:** High-resolution diagnostic charts and feature attribution graphs located under `output/graphs/`.
 
-## 💡 Tech Stack \& Libraries
+## 💡 Tech Stack & Architecture Framework
 
-* **Core Language:** Python
-* **Machine Learning \& Ensembles:** Scikit-learn, NumPy, Pandas
-* **Explainable AI (XAI):** Custom attribution modules \& feature scoring engines
-* **Multi-Agent Orchestration:** Custom Python Agent Swarm Architecture
-* **Reporting \& Visualization:** ReportLab, Matplotlib, Seaborn
+The platform is engineered using modern, robust libraries and custom-built architectural patterns designed for high-performance safety-critical systems:
+
+* 🐍 **Core Programming Language:** Python (v3.10+)
+* 🧠 **Machine Learning & Ensembles:** Scikit-learn, NumPy, Pandas, Stacking Ensembles, and Regression Estimators
+* 🔍 **Explainable AI (XAI) & Auditing:** Custom local feature attribution, SHAP-style scoring engines, and automated risk quantification
+* 🤖 **Multi-Agent Orchestration:** Custom Python Agent Swarm Architecture (Telemetry Monitoring Agent, XAI Audit Agent, Master Orchestrator)
+* 📊 **Reporting & Visualization:** ReportLab (Multi-page PDF compilation engine), Matplotlib, and Seaborn (Enterprise diagnostic dashboard generation)
+
+---
+
+## 📊 Visual Analytics & Telemetry Dashboards
+
+Here are the enterprise-grade diagnostic charts and feature attribution graphs generated by the system under `output/graphs/`:
+
+### 1. Cumulative Fleet Risk Exposure Magnitude Trend
+![Cumulative Risk Curve](output/graphs/cumulative_risk_curve.png)
+
+### 2. Airframe Operating Hours vs Remaining Useful Life (RUL)
+![RUL vs Operating Hours](output/graphs/rul_vs_operating_hours.png)
+
+### 3. Ambient Temperature vs Turbine Exhaust Gas Thermal Stress
+![Thermal Stress Correlation](output/graphs/thermal_stress_correlation.png)
+
+### 4. Explainable AI (XAI) Feature Attribution Impact Ranking
+![XAI Feature Attribution](output/graphs/xai_feature_attribution.png)
 
 ## 🛡️ License
 
